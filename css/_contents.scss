@@ -15,30 +15,17 @@
 
 .intro-section {
   padding: 50px 0;
-  .wrapper-intro {
-    width: 66.67%;
-    h2 {
-      margin-bottom: 50px;
-    }
+  h2 {
+    margin-bottom: 50px;
   }
 }
 
 .top-products-section {
   padding: 50px 0;
   background-color: $bg;
-  .container {
-    display: flex;
-  }
-  .wraper-products {
-    width: 66.67%;
-  }
-  .wraper-aside {
-    position: relative;
+  .aside {
     margin-top: -300px;
     margin-bottom: -100px;
-    width: 33.33%;
-
-
     .latest-updates {
       background-color: white;
       padding: 35px;
@@ -76,22 +63,20 @@
       box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
     }
   }
-  h2 {
-    //margin-bottom: 50px;
-  }
   .list-products {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    //display: flex;
+    //flex-wrap: wrap;
+    //margin-bottom: 30px;
     li {
-      width: 50%;
-      padding-right: 20px;
-      padding-bottom: 20px;
+      //width: 50%;
+      //padding-right: 20px;
+      //padding-bottom: 20px;
     }
   }
   .wrap-product {
     text-decoration: none;
     display: block;
+    margin-bottom: 30px;
     .block-text {
       padding: 15px 20px;
       background-color: white;
@@ -147,18 +132,16 @@
   .wrap-btn {
     text-align: center;
   }
-
-
   p {
     color: #1C1C1C;
   }
 }
 
 .articles-section {
-  padding: 50px 0;
   .container {
     max-width: 910px;
   }
+  padding: 50px 0;
   p {
     margin-bottom: 20px;
   }
@@ -166,22 +149,10 @@
     margin-bottom: 50px;
   }
   .wrap-article {
-    display: flex;
-    align-items: center;
     cursor: pointer;
     margin-bottom: 50px;
     &:hover {
       box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-    }
-    .block-img {
-      width: 43%;
-      img {
-        float: left;
-      }
-    }
-    .text-block {
-      width: 57%;
-      padding: 10px 25px;
     }
     h3 {
       padding-bottom: 30px;
