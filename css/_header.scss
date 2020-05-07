@@ -137,7 +137,8 @@
       color: $text;
       font-size: 15px;
       &:hover {
-        font-weight: 500;
+        color: $accent;
+        //font-weight: 500;
       }
     }
   }
