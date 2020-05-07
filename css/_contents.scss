@@ -1,14 +1,34 @@
 .hero-section {
-  padding: 460px 0 20px;
+  padding: 440px 0 0;
   background: url("../img/hero-img.jpg") no-repeat 50% 50%;
   background-size: cover;
   h1 {
     color: white;
+    font-size: 45px;
     font-weight: 500;
+    background: rgba(1,1,1,.5);
+    padding: 20px 100px 20px 15%;
+    display: inline-block;
     span {
       font-family: 'Playfair Display', serif;
       font-style: italic;
       font-weight: 500;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding: 320px 0 0;
+    background: url("../img/hero-img.jpg") no-repeat 80% 50%;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      width: 100%;
+      font-size: 36px;
+      padding: 20px 40px;
+      span {
+        display: block;
+      }
     }
   }
 }
@@ -34,28 +54,6 @@
       p {
         margin-bottom: 20px;
       }
-      .date {
-        padding-top: 10px;
-        font-family: 'Playfair Display', serif;
-        font-style: italic;
-        font-size: 12px;
-        letter-spacing: 0.18em;
-        position: relative;
-        span {
-          font-weight: 600;
-          font-size: 14px;
-        }
-        &:before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: block;
-          width: 94px;
-          height: 2px;
-          background-color: $accent;
-        }
-      }
     }
     .current-specials {
       background-color: white;
@@ -73,68 +71,18 @@
       //padding-bottom: 20px;
     }
   }
-  .wrap-product {
-    text-decoration: none;
-    display: block;
-    margin-bottom: 30px;
-    .block-text {
-      padding: 15px 20px;
-      background-color: white;
-      .name-product {
-        padding-bottom: 10px;
-      }
-    }
-    .block-img {
-      width:100%;
-      display: flex;
-      margin: auto;
-    }
-    .image-container {
-      display: block;
-      height: 0;
-      width: 100%;
-      height: 100px;
-      padding-top: 100%;
-      overflow: hidden;
-      position: relative;
-      & > img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        object-fit: cover;
-        max-width: none;
-        max-height: none;
-        width: 100%;
-        height: 100%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        max-height: 100%;
-        max-width: 100%;
-      }
-    }
-    .wrap-img-product {
-      img {
-        //float: left;
-      }
-    }
-    &:hover {
-      .block-text {
-        background-color: $accent;
-      }
-      h3, p {
-        color: white;
-        &:after {
-          background: white;
-        }
-      }
-    }
-  }
+
   .wrap-btn {
     text-align: center;
   }
   p {
     color: #1C1C1C;
   }
+}
+
+.product-list {
+  margin-bottom: 30px;
+
 }
 
 .articles-section {
@@ -162,6 +110,13 @@
       color: #1C1C1C;
     }
   }
+  @media only screen and (max-width: 992px) {
+    .image-container {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 
@@ -171,3 +126,53 @@
   }
 
 }
+
+.our-products {
+  background-color: $bg;
+  .header-page {
+    padding: 60px 0;
+    background: url("../img/our-products/our-product-header-bg.png") no-repeat 50% 50%;
+    background-size: cover;
+    h1 {
+      display: inline-block;
+      padding: 20px 100px;
+      font-size: 45px;
+      font-weight: 500;
+      color: white;
+      background: rgba(1,1,1,.5);
+      span {
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
+      }
+    }
+  }
+  .product-section {
+    padding: 50px 0 70px;
+  }
+  .filter-menu {
+    margin-bottom: 50px;
+  }
+  .item-menu {
+    a {
+      display: block;
+      padding: 14px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      &:hover {
+        background-color: $accent;
+        color: white;
+      }
+    }
+  }
+  .item-menu.active {
+    a {
+      background-color: $accent;
+      color: white;
+    }
+  }
+}
+

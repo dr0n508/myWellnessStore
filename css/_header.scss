@@ -1,11 +1,10 @@
 @import "_vars.scss";
 
 .animate  {
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
-
 
 .no_scroll {
   overflow: hidden;
@@ -101,6 +100,7 @@
 }
 
 .header {
+  position: relative;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
   background: #fff;
   height: 57px;
@@ -220,7 +220,7 @@
 @media (max-width: 1199px) {
   .header {
     height: 57px;
-    position: fixed;
+
     width: 100%;
     .container {
       padding-top: 10px;
@@ -229,9 +229,6 @@
     .logo {
       height: 40px;
     }
-  }
-  .main {
-    //padding-top: 60px;
   }
   .burger {
     display: block;
@@ -269,5 +266,8 @@
   }
   .right-nav {
     flex-direction: column;
+    .social-nav {
+      margin-bottom: 20px;
+    }
   }
 }

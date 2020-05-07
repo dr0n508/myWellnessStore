@@ -18,9 +18,32 @@ h3 {
   position: relative;
 }
 
+.small-text { font-size: 14px; }
+
+.italic { font-style: italic; }
+
+.uppercase { text-transform: uppercase; }
+
+.bold { font-weight: 500; }
+
+.border-above {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 94px;
+    height: 2px;
+    background-color: $accent;
+  }
+}
+
 .border-under {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   &:after {
     content: "";
     position: absolute;
@@ -33,6 +56,17 @@ h3 {
   }
 }
 
-.small-text {
-  font-size: 14px;
+.date {
+  padding-top: 10px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  position: relative;
+  span {
+    font-weight: 600;
+    font-size: 14px;
+  }
 }
+
+
