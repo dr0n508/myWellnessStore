@@ -122,7 +122,6 @@
       box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
     }
     h3 {
-      //padding-bottom: 30px;
       font-weight: 500;
     }
     p {
@@ -130,10 +129,21 @@
     }
   }
   @media only screen and (max-width: 992px) {
+    .wrap-article:hover {
+      box-shadow: none;
+    }
     .image-container {
       img {
         width: 100%;
       }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .wrap-article {
+      margin-bottom: 0;
+    }
+    h3 {
+      margin-top: 30px;
     }
   }
 }

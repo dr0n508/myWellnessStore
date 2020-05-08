@@ -441,6 +441,42 @@ h3 {
   .product-item.top-product:hover h3:after, .product-item.top-product:hover p:after {
     background: white; }
 
+.slick-list {
+  margin: 0 30px; }
+
+.slick-prev, .slick-next {
+  top: 30%; }
+  .slick-prev:before, .slick-next:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid; }
+
+.slick-next {
+  right: 0; }
+  .slick-next:before {
+    border-width: 15px 0 15px 16px;
+    border-color: transparent transparent transparent #C4C4C4; }
+
+.slick-prev {
+  left: 0; }
+  .slick-prev:before {
+    border-width: 15px 16px 15px 0;
+    border-color: transparent #C4C4C4 transparent transparent; }
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #C4C4C4; }
+  .slick-dots li button:before {
+    content: ""; }
+  .slick-dots li button:hover {
+    background-color: #88C4C5; }
+.slick-dots .slick-active button {
+  background-color: #88C4C5; }
+
 .modal {
   display: none;
   position: fixed;
@@ -577,8 +613,15 @@ h3 {
     .articles-section .wrap-article p {
       color: #1C1C1C; }
   @media only screen and (max-width: 992px) {
+    .articles-section .wrap-article:hover {
+      box-shadow: none; }
     .articles-section .image-container img {
       width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .articles-section .wrap-article {
+      margin-bottom: 0; }
+    .articles-section h3 {
+      margin-top: 30px; } }
 
 .latest-updates article {
   margin-bottom: 30px; }
