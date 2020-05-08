@@ -29,6 +29,15 @@
   }
 }
 
+.accent-bg {
+  .slick-next::before {
+    border-color: transparent transparent transparent white;
+  }
+  .slick-prev::before {
+    border-color: transparent white transparent transparent;
+  }
+}
+
 .slick-dots {
   li {
     button {

@@ -105,6 +105,7 @@
 }
 
 .articles-section {
+  background-color: white;
   padding: 50px 0;
   p {
     margin-bottom: 20px;
@@ -204,4 +205,78 @@
     }
   }
 }
+
+.accent-bg {
+  background-color: $accent;
+  .read-more-btn {
+    color: white;
+    &:after {
+      border-color: transparent transparent transparent white;
+    }
+  }
+}
+
+.single-product {
+  background-color: $bg;
+}
+
+.testimonials-section {
+  padding: 40px 0 20px;
+  .list-testimonials {
+    .item {
+      p {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        width: 50%;
+
+
+      }
+    }
+  }
+}
+
+
+
+.product-cart {
+  padding: 20px 0 50px;
+
+  .wrapper-card {
+    background-color: white;
+
+    .block-text {
+      padding: 20px;
+      .title-block {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: solid 2px #88C4C5;
+        p {
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 30px;
+          color: $text;
+
+        }
+      }
+      .quantity-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        p {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
