@@ -1,3 +1,4 @@
+//hero section
 .hero-section {
   padding: 440px 0 0;
   background: url("../img/hero-img.jpg") no-repeat 50% 50%;
@@ -10,16 +11,14 @@
     padding: 20px 100px 20px 15%;
     display: inline-block;
     span {
-      font-family: 'Playfair Display', serif;
+      font-family: $playfair;
       font-style: italic;
       font-weight: 500;
     }
   }
-
   @media only screen and (max-width: 992px) {
     padding: 320px 0 0;
-    background: url("../img/hero-img.jpg") no-repeat 80% 50%;
-    background-size: cover;
+    background-position: 80% 50%;
   }
   @media only screen and (max-width: 768px) {
     h1 {
@@ -33,6 +32,7 @@
   }
 }
 
+//intro-section
 .intro-section {
   padding: 50px 0;
   p {
@@ -40,23 +40,11 @@
   }
 }
 
+//top-products-section
 .top-products-section {
   padding: 50px 0;
   background-color: $bg;
-
-  .list-products {
-    //display: flex;
-    //flex-wrap: wrap;
-    //margin-bottom: 30px;
-    li {
-      //width: 50%;
-      //padding-right: 20px;
-      //padding-bottom: 20px;
-    }
-  }
-
   .wrap-btn {
-    text-align: center;
     margin-bottom: 50px;
   }
   p {
@@ -66,9 +54,10 @@
 
 .product-list {
   margin-bottom: 30px;
-
 }
 
+
+//articles-section
 .articles-section {
   background-color: white;
   padding: 50px 0;
@@ -85,7 +74,7 @@
       float: left;
     }
     &:hover {
-      box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+      box-shadow: $shadow;
     }
     h3 {
       font-weight: 500;
@@ -114,32 +103,11 @@
   }
 }
 
-
-.latest-updates {
-  article {
-    //margin-bottom: 30px;
-  }
-
-}
-
+//page our products
 .our-products {
   background-color: $bg;
   .header-page {
-    padding: 60px 0;
     background: url("../img/our-products/our-product-header-bg.png") no-repeat 50% 50%;
-    background-size: cover;
-    h1 {
-      display: inline-block;
-      padding: 20px 100px;
-      font-size: 45px;
-      font-weight: 500;
-      color: white;
-      background: rgba(1,1,1,.5);
-      span {
-        font-style: italic;
-        font-family: 'Playfair Display', serif;
-      }
-    }
   }
   .product-section {
     padding: 50px 0 70px;
@@ -185,25 +153,23 @@
   background-color: $bg;
 }
 
+//testimonials-section
 .testimonials-section {
   padding: 40px 0 20px;
   .list-testimonials {
     .item {
       p {
-        font-family: 'Playfair Display', serif;
+        font-family: $playfair;
         font-size: 20px;
         color: white;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
         width: 50%;
-
-
       }
     }
   }
 }
-
 
 
 .product-cart {
@@ -224,42 +190,13 @@
   p {
     margin-bottom: 20px;
   }
-
   .wrapper-card {
     background-color: white;
-    .image-container {
-      display: block;
-      height: 0;
-      width: 100%;
-      height: 100px;
-      padding-top: 100%;
-      overflow: hidden;
-      position: relative;
-      & > img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        object-fit: cover;
-        max-width: none;
-        max-height: none;
-        width: 100%;
-        height: 100%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        max-height: 100%;
-        max-width: 100%;
-      }
-    }
-
-
-
-
     .block-text {
       padding: 20px;
       .title-block {
         display: flex;
         justify-content: space-between;
-        //padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: solid 2px #88C4C5;
         p {
@@ -267,7 +204,6 @@
           font-weight: 500;
           line-height: 30px;
           color: $text;
-
         }
       }
       .quantity-block {
@@ -281,6 +217,41 @@
             display: block;
           }
         }
+      }
+    }
+  }
+}
+
+///////////////product cart///////////////
+.product-item {
+  margin-bottom: 20px;
+  .wrap-product {
+    @extend.animate;
+    text-decoration: none;
+    display: block;
+  }
+  .block-text {
+    padding: 15px 20px;
+    background-color: white;
+    @extend.animate;
+  }
+  .detail-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.product-item.top-product {
+  &:hover {
+    .block-text {
+      background-color: $accent;
+    }
+    h3, p {
+      color: white;
+      &:after {
+        background: white;
       }
     }
   }

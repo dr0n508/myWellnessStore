@@ -18,7 +18,13 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap');
 
-@import "_vars.scss";
+//vars
+$playfair: 'Playfair Display', serif;
+$default: 'Montserrat', sans-serif;
+$accent: #88C4C5;
+$bg: #F7F7F7;
+$text: #1C1C1C;
+$shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
 
 body {
   padding: 0;
@@ -30,24 +36,31 @@ body {
   color: $text;
 }
 
-@import "grid.css";
+.animate  {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 
+@import "lib/normalize.css";
+@import "lib/grid.css";
 
-@import "normalize.css";
-//@import "_grid.scss";
-@import "_base.scss";
-@import "_header.scss";
 @import "_typography.scss";
-@import "_elements.scss";
+
+@import "elements/sliders";
+@import "elements/accordion";
+@import "elements/header-page";
+@import "elements/modal";
+@import "elements/breadcrumbs";
+@import "elements/inputs";
+@import "elements/video";
+@import "elements/image";
+@import "elements/stars";
+@import "elements/btns";
+
+
+@import "_header.scss";
 @import "_aside.scss";
-@import "_sliders.scss";
-@import "_accordion.scss";
-
-
-
-
-@import "_modal.scss";
-@import "_hero.scss";
 @import "_contents.scss";
 @import "_footer.scss";
 
