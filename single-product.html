@@ -102,7 +102,7 @@
 
                                 <div class="custom-select">
                                     <select  label="" size="" name="">
-                                        <option selected>select option</option>
+                                        <option selected>Select option</option>
                                         <option value="option_one">option one</option>
                                         <option value="option_two">option two</option>
                                         <option value="option_three">option three</option>
@@ -121,13 +121,13 @@
                 </div>
                 <div class="col-md-7">
                     <h1>Nopalea</h1>
-                    <div class="stars-block four border-under">
+                    <div class="stars-block big four border-under d-flex align-items-center">
                         <div class="star"></div>
                         <div class="star"></div>
                         <div class="star"></div>
                         <div class="star"></div>
                         <div class="star"></div>
-                        <p class="number-reviews">(<span>32</span> Reviews)</p>
+                        <a href="#" class="number-reviews">(<span>32</span> Reviews)</a>
                     </div>
                     <h3>Reduce Inflammation with the
                         Sonoran Superfruit</h3>
@@ -150,50 +150,67 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="video">
                         <div class="videoWrapper">
                             <iframe id="" src="https://player.vimeo.com/video/373929774?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
 
                     <div class="content">
                         <div class="acc">
                             <div class="acc__card">
                                 <div class="acc__title">Read more</div>
                                 <div class="acc__panel">
-                                    I am the content found under accordion #1.
-                                    You can't see me while "active" is not present.
+                                    <p>I am the content found under accordion #1.
+                                        You can't see me while "active" is not present.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vero.</p>
                                 </div>
                             </div>
                             <div class="acc__card">
                                 <div class="acc__title">Product Information</div>
                                 <div class="acc__panel">
-                                    I am the content found under accordion #2.
-                                    You can't see me while "active" is not present.
+                                    <p>I am the content found under accordion #1.
+                                        You can't see me while "active" is not present.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vero.</p>
                                 </div>
                             </div>
                             <div class="acc__card">
                                 <div class="acc__title">Frequently Asked Questions</div>
                                 <div class="acc__panel">
-                                    I am the content found under accordion #3.
-                                    You can't see me while "active" is not present.
+                                    <p class="question">Question 1</p>
+                                    <p class="answer">Lorem ipsum dolor sit amet.</p>
+                                    <p class="question">Question 1</p>
+                                    <p class="answer">Lorem ipsum dolor sit amet.</p>
+                                    <p class="question">Question 1</p>
+                                    <p class="answer">Lorem ipsum dolor sit amet.</p>
+                                    <p class="question">Question 1</p>
+                                    <p class="answer">Lorem ipsum dolor sit amet.</p>
+                                    <p class="question">Question 1</p>
+                                    <p class="answer">Lorem ipsum dolor sit amet.</p>
+                                    <p class="question">Question 1</p>
+                                    <p class="answer">Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                             <div class="acc__card">
                                 <div class="acc__title">Review</div>
                                 <div class="acc__panel">
-                                    I am the content found under accordion #4.
-                                    You can't see me while "active" is not present.
+                                    <p>I am the content found under accordion #1.
+                                        You can't see me while "active" is not present.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vero.</p>
+                                    <p>I am the content found under accordion #1.
+                                        You can't see me while "active" is not present.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vero.</p>
                                 </div>
                             </div>
                             <div class="acc__card">
                                 <div class="acc__title">References</div>
                                 <div class="acc__panel">
-                                    I am the content found under accordion #5.
-                                    You can't see me while "active" is not present.
+                                    <p>I am the content found under accordion #1.
+                                        You can't see me while "active" is not present.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, vero.</p>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +227,7 @@
 
                 <div class="testimonial-slider">
                     <div class="item">
-                        <div class="stars-block four text-center">
+                        <div class="stars-block four d-flex justify-content-center">
                             <div class="star"></div>
                             <div class="star"></div>
                             <div class="star"></div>
@@ -228,7 +245,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="stars-block five text-center">
+                        <div class="stars-block five d-flex justify-content-center">
                             <div class="star"></div>
                             <div class="star"></div>
                             <div class="star"></div>
@@ -246,7 +263,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="stars-block two text-center">
+                        <div class="stars-block two d-flex justify-content-center">
                             <div class="star"></div>
                             <div class="star"></div>
                             <div class="star"></div>
@@ -277,7 +294,7 @@
 
                     <h2 class="text-center">Recent Blog Posts</h2>
 
-                    <div class="article-slider">
+                    <div class="js-article-slider">
                         <article class="wrap-article">
                             <div class="row align-items-center">
                                 <div class="col-lg-5 col-md-6 col-sm-12">
@@ -506,7 +523,7 @@
     //article slider home-page
 
 
-    $('.article-slider').slick({
+    $('.js-article-slider').slick({
         dots: true,
         infinite: true,
         speed: 300,
@@ -532,7 +549,7 @@
     });
 
     $('.testimonial-slider').slick({
-        autoplay: true,
+        autoplay: false,
         dots: false,
         infinite: true,
         speed: 300,
