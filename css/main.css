@@ -334,14 +334,14 @@ h3 {
     height: 2px;
     background: #88C4C5; }
 
-.date {
-  padding-top: 10px;
+time.article-datetime {
+  display: inline-block;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 12px;
   letter-spacing: 0.18em;
-  position: relative; }
-  .date span {
+  margin-bottom: 20px; }
+  time.article-datetime span {
     font-weight: 600;
     font-size: 14px; }
 
@@ -364,7 +364,6 @@ h3 {
 
 .read-more-btn {
   display: inline-block;
-  margin-bottom: 20px;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 14px;
@@ -403,15 +402,10 @@ h3 {
   .product-item .block-text {
     padding: 15px 20px;
     background-color: white; }
-  .product-item .block-img {
-    width: 100%;
-    display: flex;
-    margin: auto; }
   .product-item .image-container {
     display: block;
     height: 0;
     width: 100%;
-    height: 100px;
     padding-top: 100%;
     overflow: hidden;
     position: relative; }
@@ -420,8 +414,6 @@ h3 {
       top: 50%;
       left: 50%;
       object-fit: cover;
-      max-width: none;
-      max-height: none;
       width: 100%;
       height: 100%;
       -webkit-transform: translate(-50%, -50%);
@@ -595,6 +587,56 @@ h3 {
     -webkit-appearance: none;
     -moz-appearance: none; }
 
+.aside {
+  margin-top: -300px;
+  margin-bottom: -100px; }
+  @media only screen and (max-width: 992px) {
+    .aside {
+      margin-top: -100px;
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 768px) {
+    .aside {
+      margin-top: 0;
+      margin-bottom: 0; } }
+
+.widget {
+  padding: 35px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1); }
+  .widget:last-child {
+    margin-bottom: 0; }
+  @media only screen and (max-width: 992px) {
+    .widget {
+      padding: 35px 25px; } }
+  .widget .widget-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1C1C1C; }
+  .widget .widget-article {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .widget .widget-article:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 94px;
+      height: 2px;
+      background-color: #88C4C5; }
+    .widget .widget-article:last-child {
+      padding-bottom: 0; }
+    .widget .widget-article p, .widget .widget-article .article-image, .widget .widget-article .article-video, .widget .widget-article .read-more-btn {
+      margin-bottom: 20px; }
+      .widget .widget-article p:last-child, .widget .widget-article .article-image:last-child, .widget .widget-article .article-video:last-child, .widget .widget-article .read-more-btn:last-child {
+        margin-bottom: 0; }
+    .widget .widget-article .article-image {
+      width: 100%;
+      height: auto; }
+
 .slick-list {
   margin: 0 30px; }
 
@@ -757,37 +799,6 @@ h3 {
 .top-products-section {
   padding: 50px 0;
   background-color: #F7F7F7; }
-  .top-products-section .aside {
-    margin-top: -300px;
-    margin-bottom: -100px; }
-    @media only screen and (max-width: 992px) {
-      .top-products-section .aside {
-        margin-top: -100px;
-        margin-bottom: 0; } }
-    @media only screen and (max-width: 768px) {
-      .top-products-section .aside {
-        margin-top: 0;
-        margin-bottom: 0; } }
-    .top-products-section .aside img {
-      width: 100%;
-      height: auto; }
-    .top-products-section .aside .latest-updates {
-      background-color: white;
-      padding: 35px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1); }
-      .top-products-section .aside .latest-updates p {
-        margin-bottom: 20px; }
-      @media only screen and (max-width: 992px) {
-        .top-products-section .aside .latest-updates {
-          padding: 35px 25px; } }
-    .top-products-section .aside .current-specials {
-      background-color: white;
-      padding: 35px;
-      box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1); }
-      @media only screen and (max-width: 992px) {
-        .top-products-section .aside .current-specials {
-          padding: 35px 25px; } }
   .top-products-section .wrap-btn {
     text-align: center;
     margin-bottom: 50px; }
@@ -804,30 +815,27 @@ h3 {
     margin-bottom: 20px; }
   .articles-section h2 {
     margin-bottom: 50px; }
-  .articles-section .wrap-article {
+  .articles-section .article-item {
     cursor: pointer;
     margin-bottom: 50px; }
-    .articles-section .wrap-article .image-container img {
+    .articles-section .article-item .image-container img {
       float: left; }
-    .articles-section .wrap-article:hover {
+    .articles-section .article-item:hover {
       box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1); }
-    .articles-section .wrap-article h3 {
+    .articles-section .article-item h3 {
       font-weight: 500; }
-    .articles-section .wrap-article p {
+    .articles-section .article-item p {
       color: #1C1C1C; }
   @media only screen and (max-width: 992px) {
-    .articles-section .wrap-article:hover {
+    .articles-section .article-item:hover {
       box-shadow: none; }
     .articles-section .image-container img {
       width: 100%; } }
   @media only screen and (max-width: 768px) {
-    .articles-section .wrap-article {
+    .articles-section .article-item {
       margin-bottom: 0; }
     .articles-section h3 {
       margin-top: 30px; } }
-
-.latest-updates article {
-  margin-bottom: 30px; }
 
 .our-products {
   background-color: #F7F7F7; }
@@ -902,10 +910,6 @@ h3 {
     margin-bottom: 20px; }
   .product-cart .wrapper-card {
     background-color: white; }
-    .product-cart .wrapper-card .block-img {
-      width: 100%;
-      display: flex;
-      margin: auto; }
     .product-cart .wrapper-card .image-container {
       display: block;
       height: 0;

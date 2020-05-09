@@ -65,13 +65,13 @@ h3 {
   }
 }
 
-.date {
-  padding-top: 10px;
+time.article-datetime {
+  display: inline-block;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 12px;
   letter-spacing: 0.18em;
-  position: relative;
+  margin-bottom: 20px;
   span {
     font-weight: 600;
     font-size: 14px;

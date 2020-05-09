@@ -43,42 +43,7 @@
 .top-products-section {
   padding: 50px 0;
   background-color: $bg;
-  .aside {
-    margin-top: -300px;
-    margin-bottom: -100px;
-    @media only screen and (max-width: 992px) {
-      margin-top: -100px;
-      margin-bottom: 0;
-    }
-    @media only screen and (max-width: 768px) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    img {
-      width: 100%;
-      height: auto;
-    }
-    .latest-updates {
-      background-color: white;
-      padding: 35px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
-      p {
-        margin-bottom: 20px;
-      }
-      @media only screen and (max-width: 992px) {
-        padding: 35px 25px;
-      }
-    }
-    .current-specials {
-      background-color: white;
-      padding: 35px;
-      box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
-      @media only screen and (max-width: 992px) {
-        padding: 35px 25px;
-      }
-    }
-  }
+
   .list-products {
     //display: flex;
     //flex-wrap: wrap;
@@ -113,7 +78,7 @@
   h2 {
     margin-bottom: 50px;
   }
-  .wrap-article {
+  .article-item {
     cursor: pointer;
     margin-bottom: 50px;
     .image-container img {
@@ -130,7 +95,7 @@
     }
   }
   @media only screen and (max-width: 992px) {
-    .wrap-article:hover {
+    .article-item:hover {
       box-shadow: none;
     }
     .image-container {
@@ -140,7 +105,7 @@
     }
   }
   @media only screen and (max-width: 768px) {
-    .wrap-article {
+    .article-item {
       margin-bottom: 0;
     }
     h3 {
@@ -152,7 +117,7 @@
 
 .latest-updates {
   article {
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
   }
 
 }
@@ -262,14 +227,6 @@
 
   .wrapper-card {
     background-color: white;
-
-
-
-    .block-img {
-      width:100%;
-      display: flex;
-      margin: auto;
-    }
     .image-container {
       display: block;
       height: 0;
@@ -328,6 +285,12 @@
     }
   }
 }
+
+
+
+
+
+
 
 
 
